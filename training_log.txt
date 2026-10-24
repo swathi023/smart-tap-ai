@@ -1,0 +1,27 @@
+Class balance:
+ crowd_level
+MEDIUM    0.634
+HIGH      0.287
+LOW       0.079
+Name: proportion, dtype: float64 
+
+=== Baselines (5-fold CV on train set) ===
+Decision Tree (default)    0.9338 +/- 0.0091
+Random Forest              0.9688 +/- 0.0051
+KNN (k=5)                  0.8058 +/- 0.0165
+
+Best params: {'criterion': 'gini', 'max_depth': 5, 'min_samples_leaf': 5}
+
+Test accuracy (optimized tree): 0.9767
+
+              precision    recall  f1-score   support
+
+         LOW       1.00      0.90      0.95        48
+      MEDIUM       0.98      0.99      0.99       380
+        HIGH       0.97      0.97      0.97       172
+
+    accuracy                           0.98       600
+   macro avg       0.98      0.95      0.97       600
+weighted avg       0.98      0.98      0.98       600
+
+[OK] Saved model to ../decision_tree_model.pkl

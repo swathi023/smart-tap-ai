@@ -1,0 +1,5 @@
+Crowd levels per slot: ['LOW', 'LOW', 'MEDIUM', 'HIGH', 'HIGH', 'MEDIUM', 'LOW']
+Bus allocation (12 total, 1 base each): [1, 1, 2, 3, 2, 2, 1]
+LOW -> {'headway_minutes': 20, 'action_code': 'NORMAL', 'message': 'Standard headway - no change needed.'}
+MEDIUM -> {'headway_minutes': 12, 'action_code': 'REDUCE_HW', 'message': 'Reduce headway - increase frequency moderately.'}
+HIGH -> {'headway_minutes': 6, 'action_code': 'ADD_BUS', 'message': 'Deploy additional bus - high crowd predicted.'}
